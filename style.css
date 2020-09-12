@@ -1,38 +1,43 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-    font-family: sans-serif;
-    color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); */
+  /* background-color: #fdf6e6; */
+  /* background-color: #ffcc59; */
+  background-color: #33495f;
+  font-family: sans-serif;
+  /* color: #2d291d; */
+  color: #ffffff;
 }
-.location, 
+.location,
 .temperature {
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .temperature {
-    flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
-.degree-section {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.temperature-section {
+  display: flex;
+  flex-direction: row;
 }
-.degree-section span {
-    margin: 10px;
-    font-size: 30px;
+.temperature-section span {
+  margin: 10px;
+  font-size: 30px;
 }
-.degree-section h2 {
-    font-size: 40px;
+.temperature-degree {
+  font-size: 40px;
 }
